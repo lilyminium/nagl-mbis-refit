@@ -1,0 +1,34 @@
+name: evaluator-0-4-10
+channels:
+  - conda-forge
+
+dependencies:
+  - python <3.12
+  - pip
+
+  # testing
+  - pytest
+  - pytest-cov
+
+  # core deps
+  - rich
+  - click
+  - click-option-group
+  - openff-toolkit-base
+  - openff-evaluator
+  - qcengine >=0.18.0
+  - numpy<=1.24.9
+  - jinja2
+  - chemper
+  - pandas
+  - torsiondrive
+  - tqdm
+  - forcebalance
+
+  - ipykernel
+  - pyarrow
+  - seaborn
+
+  # - qubekit
+  - openff-utilities
+  - pydantic <2
