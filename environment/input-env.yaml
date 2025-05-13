@@ -1,0 +1,39 @@
+name: naglmbis-refit
+channels:
+  - conda-forge
+
+dependencies:
+  - python <3.12
+  - pip
+
+  # testing
+  - pytest
+  - pytest-cov
+
+  # core deps
+  - pyarrow
+  - dgl >=1
+  - pytorch
+  - pytorch-lightning
+  - rich
+  - click
+  - click-option-group
+  - openff-toolkit-base
+  - openff-evaluator
+  - qcengine >=0.18.0
+  - numpy<=1.24.9
+  - jinja2
+  - chemper
+  - pandas
+  - torsiondrive
+  - tqdm
+
+  # - qubekit
+  - openff-utilities
+  - pydantic <2
+
+  - pip:
+      - git+https://github.com/SimonBoothroyd/nagl.git@main
+      - espaloma_charge
+      - git+https://github.com/qubekit/QUBEKit.git@main
+      - git+https://github.com/bismuthadams1/nagl-mbis.git@main
